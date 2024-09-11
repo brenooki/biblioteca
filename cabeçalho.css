@@ -10,14 +10,14 @@ body {
 
 header {
     background-color: cadetblue;
-    color: rgb(155, 208, 209);
+    color: rgb(14, 15, 15);
     height: 60px;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
 }
 
-.title{
+.title {
     display: flex;
     justify-content: left;
     margin-left: 20px;
@@ -40,18 +40,93 @@ header {
 .h3 {
     padding: 20px;
     margin-right: 30px;
-    
 }
-
 
 a {
     text-decoration: none; /* Remove o sublinhado */
     color: #000; /* Define a cor do link (você pode escolher qualquer cor) */
     font-weight: bold; /* Estiliza o texto do link */
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: #c2c1e6; /* Cor do link ao passar o mouse */
     text-decoration: none; /* Adiciona sublinhado ao passar o mouse, se quiser */
     transition: color 0.3s ease; /* Transição suave na mudança de cor */
-  }
+}
+
+.menu {
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: space-evenly; /* Distribui o espaço entre os itens de forma uniforme */
+    background-color: #f2f2f2; /* Ajuste a cor de fundo conforme necessário */
+    padding: 10px 0; /* Espaçamento vertical */
+    border: none; /* Remove bordas */
+}
+
+.menu-item {
+    color: #000; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    transition: background-color 0.3s; /* Transição suave para mudança de fundo */
+}
+
+.menu-item:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+/* Responsividade para telas menores que 768px (mobile) */
+@media (max-width: 768px) {
+    header {
+        height: 50px;
+        flex-direction: column; /* Empilha o conteúdo no header */
+    }
+
+    .title {
+        justify-content: center; /* Centraliza o título no mobile */
+        margin-left: 0;
+    }
+
+    .title_pagina {
+        font-size: 18px; /* Reduz o tamanho da fonte no mobile */
+    }
+
+    .opcoes {
+        font-size: 8px; /* Diminui o tamanho da fonte no mobile */
+    }
+
+    .h3 {
+        padding: 10px;
+        margin-right: 15px;
+    }
+
+    .menu {
+        flex-direction: column; /* Empilha verticalmente os itens do menu em telas pequenas */
+        padding: 0;
+    }
+
+    .menu-item {
+        width: 100%; /* Faz cada item ocupar a largura total */
+    }
+}
+
+/* Responsividade para telas maiores que 1024px (desktop) */
+@media (min-width: 1024px) {
+    header {
+        height: 70px;
+    }
+
+    .title_pagina {
+        font-size: 28px; /* Aumenta o tamanho da fonte em telas grandes */
+    }
+
+    .opcoes {
+        font-size: 12px; /* Aumenta o tamanho da fonte em telas grandes */
+    }
+
+    .h3 {
+        padding: 25px;
+        margin-right: 40px;
+        text-align: center; /* Alinha o texto ao centro horizontalmente */
+        width: 100%; /* Garante que o h2 ocupe a largura total disponível */
+    }
+}
