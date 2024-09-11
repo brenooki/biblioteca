@@ -11,10 +11,11 @@ body {
 header {
     background-color: cadetblue;
     color: rgb(14, 15, 15);
-    height: 60px;
+    height: auto;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+    padding: 10px 5px;
 }
 
 .title {
@@ -90,6 +91,12 @@ a:hover {
         font-size: 18px; /* Reduz o tamanho da fonte no mobile */
     }
 
+    @media (max-width: 480px) {
+        .title_pagina {
+            font-size: 16px; /* Ainda menor para telas muito pequenas */
+        }
+    }
+
     .opcoes {
         font-size: 8px; /* Diminui o tamanho da fonte no mobile */
     }
@@ -115,8 +122,14 @@ a:hover {
         height: 70px;
     }
 
-    .title_pagina {
-        font-size: 28px; /* Aumenta o tamanho da fonte em telas grandes */
+    .title_pagina {  
+            font-size: 24px; /* Tamanho padrão para desktop */
+            padding: 10px 0; /* Espaçamento vertical para garantir que o texto tenha espaço */
+            width: 100%; /* Garante que o título ocupe a largura total */
+            box-sizing: border-box; /* Inclui padding e border na largura total */    
+            overflow: hidden; /* Esconde qualquer texto que ultrapasse o elemento */
+               white-space: nowrap; /* Impede a quebra de linha */
+              text-overflow: ellipsis; /* Adiciona "..." ao final se o texto for cortado */
     }
 
     .opcoes {
