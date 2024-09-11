@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilos do Formulário */
+.form_preenchimento {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="name"],
+input[type="int"],
+input[type="date"]{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border-color: #7f53ac;
+    outline: none;
+}
+
+/* Estilo dos Botões */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #7f53ac;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a2e85;
+}
+
+input[type="reset"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background-color: #999;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+}

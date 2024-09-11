@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="devolucao.css">
+    <link rel="stylesheet" href="cabeçalho.css">
+    <link rel="stylesheet" href="rodape.css ">
+
+    <title>Biblioteca/devolucao</title>
+</head>
+<body>
+    
+    <header>
+        <div class="title">
+            <h1 class="title_pagina">
+                DEVOLUÇÃO
+            </h1>
+        </div>
+        <div class="opcoes">
+            <a href="index.html">
+                <h3 class="h3">
+                    Cadastro de usuário
+                </h3>
+            </a>
+
+            <a href="livro.html">
+                <h3 class="h3">
+                    Cadastro de livro
+                </h3>
+
+            </a>
+            <a href="emprestimo.html">
+            <h3 class="h3">
+                Empréstimo
+            </h3>
+        </a>
+
+        <a href="devolucao.html">
+            <h3 class="h3">
+                Devolução
+            </h3>
+        </a>
+
+
+        </div>
+
+    </header>
+    <main>
+        <div class="form">
+        <form action="/submit_form" method="post" class="form_preenchimento">
+            <label for="id_emprestimo">ID emprestimo:</label>
+            <input type="int" id="nome" name="id_emprestimo" required><br>
+            
+            
+            <label for="name">Nome</label>
+            <input type="name" id="name" name="name" required><br>
+    
+            <label for="titulo">Titulo do livro:</label>
+            <input type="text" id="text" name="titulo" required><br>
+
+
+            <label for="data_devolucao">Data devolução:</label>
+            <input type="date" id="date" name="data_devolucao" required><br>
+            
+
+            
+            <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+        </div>
+    </main>
+    <footer>
+        <p class="title_rodape">Direitos reservados aos seguintes alunos: <br></p>
+        <ul>
+          <li><br>Brendo Felipe</li>
+          <li>Gustavo Moreira</li>
+          <li>Guilherme Cruz</li>
+        </ul>
+      </footer>
+
+
+
+</body>
+</html>

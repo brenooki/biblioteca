@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+ 
+  
+  .title_rodape {
+    color: #301b1b;
+  }
